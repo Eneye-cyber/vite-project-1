@@ -1,20 +1,43 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { reactive, computed } from 'vue'
 
 defineProps<{ msg: string }>()
 
+const author = reactive({
+  name: 'John Doe',
+  books: [
+    
+  ]
+})
+
+// a computed ref
+const publishedBooksMessage = computed(() => {
+  return author.books.length > 0 ? 'Yes' : 'No'
+})
+
+
 const count = ref(0)
+function log(element: any){
+  console.log(element);
+}
+function increment() {
+  count.value++
+}
+
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="increment">count is {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
+    <p>Has published books:</p>
+    <span>{{ publishedBooksMessage }}</span>
   </div>
 
   <p>
