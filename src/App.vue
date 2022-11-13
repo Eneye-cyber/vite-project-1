@@ -1,12 +1,24 @@
 <script setup lang="ts">
 import Header from './components/Header.vue'
 import Viewport from './components/Viewport.vue'
+import Trending from './components/Trending.vue'
+import Articles from './components/Articles.vue'
+import Categories from './components/Categories.vue'
 </script>
 
 <template>
   <div class="body">
     <Header msg="Vite + Vue" />
-    <Viewport />>
+    <Viewport />
+    <Trending />
+    <div class="page_body">
+      <div class="page_body_main">
+        <Articles />
+      </div>
+      <div class="page_body_side">
+        <Categories />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,6 +32,22 @@ import Viewport from './components/Viewport.vue'
 }
 div{
   box-sizing: border-box !important;
+}
+.page_body{
+    padding: 14px 114px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.page_body_main{
+  flex: 1 1 70%;
+  padding: 8px;
+}
+.page_body_side{
+  flex: 1 1 30%;
+  background-color: coral;
+  display: block;
+  min-height: 100vh;
 }
 /* .logo {
   height: 6em;
