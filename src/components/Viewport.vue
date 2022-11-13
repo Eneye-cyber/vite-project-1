@@ -53,5 +53,6 @@
     font-size: 1.5rem;
     font-weight: 400;
     border-radius: 2rem;
+    cursor: pointer;
 }
 </style>
