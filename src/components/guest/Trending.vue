@@ -1,5 +1,5 @@
 <template>
-    <div class="trending">
+    <div class="trending container">
         <div class="trending_container">
             <div class="trending_sub_header">
                 <h4>EXPLORE TRENDING TOPICS</h4>

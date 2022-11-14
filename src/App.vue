@@ -1,25 +1,9 @@
 <script setup lang="ts">
-import Header from './components/Header.vue'
-import Viewport from './components/Viewport.vue'
-import Trending from './components/Trending.vue'
-import Articles from './components/Articles.vue'
-import Categories from './components/Categories.vue'
+import Guest from './pages/guest/Home.vue'
 </script>
 
 <template>
-  <div class="body">
-    <Header msg="Vite + Vue" />
-    <Viewport />
-    <Trending />
-    <div class="page_body">
-      <div class="page_body_main">
-        <Articles />
-      </div>
-      <div class="page_body_side">
-        <Categories />
-      </div>
-    </div>
-  </div>
+  <Guest />
 </template>
 
 <style >
@@ -45,9 +29,10 @@ div{
 }
 .page_body_side{
   flex: 1 1 30%;
-  background-color: coral;
   display: block;
   min-height: 100vh;
+  position: sticky;
+  top: 0;
 }
 /* .logo {
   height: 6em;

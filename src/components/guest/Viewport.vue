@@ -1,5 +1,5 @@
 <template>
-    <div class="viewport">
+    <div class="viewport container">
         <div class="viewport_container">
             <div class="viewport_text">
                 <h1>Stay curious.</h1>
@@ -27,8 +27,8 @@
     width: 100%;
     min-height: 450px;
 }
-.viewport .viewport_container .viewport_text{
-    max-width: 50%;
+.viewport .viewport_container .viewport_text p{
+    max-width: 542px;
 }
 .viewport .viewport_container .viewport_text h1{
     font-family: 'Times New Roman', Times, serif;
@@ -54,5 +54,11 @@
     font-weight: 400;
     border-radius: 2rem;
     cursor: pointer;
+}
+@media only screen and (max-width:760px) {
+    .viewport .viewport_container .viewport_text h1 {
+    font-size: 5rem;
+    line-height: 2rem;
+}
 }
 </style>

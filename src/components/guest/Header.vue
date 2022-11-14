@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="header">
+    <div class="header container">
         <div class="header_container">
             <a href="#" class="logo"><img src="https://chathamcash.com/wp-content/uploads/2021/01/dummy-logo-5b.png" alt="Vite logo" /></a>
             <div class="nav_links">
@@ -67,5 +67,11 @@
     border: 1px solid #333;
     font-weight: 400;
     border-radius: 2rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .header_container .nav_links ul li a{
+        display: none;
+    }
 }
 </style>
