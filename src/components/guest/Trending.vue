@@ -11,7 +11,7 @@
                     </div>
                     <div class="post_body">
                         <a href="#" class="post_author"> <div class="img"> <span>A</span></div> Arthur Hayes in Entrepreneur's Handbook</a>
-                        <div class="post_topic"><a href="#">Speechless</a></div>
+                        <div class="post_topic"><a href="#">Speechless , If our love was a fairy tail. I would charge you</a></div>
                         <div class="post_date"><p>Nov 9 · 10 min read</p></div>
                     </div>
                 </div>
@@ -86,6 +86,7 @@
     justify-content: space-between;
     align-items: flex-start;
     widows: 100%;
+    overflow-x: hidden;
 }
 .trending .trending_container .trending_posts .post{
     position: relative;
@@ -126,7 +127,7 @@
 .trending .trending_container .trending_posts .post .post_body .post_author{
    display: flex;
    width: 100%;
-   max-width: 320px;
+   max-width: 90vw;
    color: rgba(0, 0, 0);
    font-size: 0.8rem;
    margin-bottom: 4px;
@@ -134,7 +135,7 @@
 }
 .trending .trending_container .trending_posts .post .post_body .post_topic{
    width: 100%;
-   max-width: 320px;
+   max-width: 70vw;
 }
 .trending .trending_container .trending_posts .post .post_body .post_topic a{
    color: rgba(0, 0, 0);

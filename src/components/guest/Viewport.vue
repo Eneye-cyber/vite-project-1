@@ -57,8 +57,12 @@
 }
 @media only screen and (max-width:760px) {
     .viewport .viewport_container .viewport_text h1 {
-    font-size: 5rem;
-    line-height: 2rem;
-}
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .viewport .viewport_container .viewport_text p{
+        margin: 1rem 0 2.4rem;
+    }
+    
 }
 </style>
