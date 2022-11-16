@@ -12,7 +12,7 @@
                     <li><a href="#">Membership</a></li>
                     <li><a href="#">Write</a></li>
                     <li><a href="#">Sign In</a></li>
-                    <li><a href="#" class="button">Get Started</a></li>
+                    <li class="btn"><a href="#" class="button">Get Started</a></li>
                 </ul>
             </div>
         </div>
@@ -67,11 +67,16 @@
     border: 1px solid #333;
     font-weight: 400;
     border-radius: 2rem;
+    /* min-width: 74px; */
 }
 
 @media only screen and (max-width: 760px) {
-    .header_container .nav_links ul li a{
+    .header_container .nav_links ul li{
         display: none;
+    }
+    .header_container .nav_links ul li.btn{
+        display: inline-flex;
+        padding: 4px 0;
     }
 }
 </style>
